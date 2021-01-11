@@ -1,0 +1,165 @@
+@import url('https://fonts.googleapis.com/css2?family=Goldman:wght@700&family=Syne+Mono&display=swap');
+
+$color-main: #FFC312;
+$color-background: #ced6e0;
+$color-text: #444444;
+$font-header: 'Goldman', cursive;
+$font-text: 'Syne Mono', monospace;
+
+*{
+  box-sizing: border-box;
+}
+
+*:focus{
+  box-shadow: none;
+}
+
+body, html{
+  background-color: $color-background;
+  color: $color-text;
+  font-family:'Syne Mono', monospace;
+  font-size: 16px;
+  line-height: 1.7;
+  margin: 0;
+  height: 100%;
+}
+
+a, a:hover{
+  text-decoration: none;
+  color: $color-main;
+}
+
+img{
+  max-width: 100%;
+    height: auto;
+}
+
+section{
+  padding: 60px 0;
+}
+
+.container {
+  max-width: 980px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.splash{
+  font-family: 'Goldman', cursive;
+  height: 70%;
+  color: $color-main;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  padding: 0 24px;
+  background-image: url('https://i.postimg.cc/XJPrW1dd/pexels-julia-volk-5653011-3.jpg');
+  background-repeat:no-repeat;
+  background-size: cover;
+  background-position: center bottom;
+  
+}
+.page-intro{
+  margin: auto;
+  text-align: center;
+}
+
+.main-title{
+ text-shadow: -1px 0 black, 0 1px black,
+      1px 0 black, 0 -1px black;
+  font-family: 'GOldman', cursive;
+  color: #ced6e0;
+  font-size: 52px;
+  margin: 0;
+  font-weight: 600;
+}
+
+.main-subtitle{
+  text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+  font-family: 'Goldman', cursive;
+  color: #ffffff;
+  font-size: 28px;
+  margin: 12px 60px 0;
+  font-weight: 500;
+}
+
+.btn{
+  padding: 8px 12px 8px 12px;
+  border-radius: 20px 70%;
+  font-size: 14px;
+  background-color: $color-main;
+  color: #ffffff;
+  
+}
+.btn:hover{
+  border-radius: 20px 70%;
+  background-color: lighten($color-main, 23%);
+  color: #ffffff;
+}
+
+.section-title{
+  position: relative;
+  margin: 0 0 60px 0;
+  text-align: center;
+  font-family: 'Syne Mono', monospace;
+  color: $color-text;
+  font-weight: 2500;
+  text-shadow: -1px 0 white, 0 1px white, 1px 0 white, 0 -1px white;
+  
+}
+
+.section-title:after {
+  position: absolute;
+  display: block;
+  content: '';
+  background: $color-text;
+  width: 50px;
+  height: 15px;
+  
+  
+  left: 50%;
+  bottom: -16px;
+  margin-left: -25px;  
+}
+
+.about{
+  bakground-color: $color-background;
+  .section-intro{
+    margin: 36px 0 0 0 ;
+    color: blue;
+  }
+}
+.features-wrapper{
+  display: flex;
+}
+.feature{
+  flex: 0 0 33.333333%;
+  max-width: 33.333333%;
+  text-align: center;
+  margin: 24px 0 0 0 ;
+}
+
+.feature i{
+  width: 100px;
+  height: 100px;
+  line-height: 100px;
+  color: #ffffff;
+  font-size: 28px;
+  background-color: $color-main;
+  border-radius: 50%;
+}
+
+.feature-title{
+margin: 24px 0 0 0 ;
+}
+
+.features-wrapper{
+  margin: 24px 0 0 0;
+  padding: 0 30px;
+  
+}
+.statement{
+  background-image: url('http://i66.tinypic.com/5a3oh.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+}
